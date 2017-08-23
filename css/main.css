@@ -1,0 +1,71 @@
+/* =============================================================
+* BASE STYLE
+============================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Encode Sans', sans-serif;
+}
+
+main {
+  margin: 0 auto;
+}
+
+.media-wrapper {
+  width: 100%;
+}
+
+.transcript {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.transcript p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.transcript span:hover {
+  cursor: pointer;
+}
+
+.script {
+  color: #1D1E1D;
+  transition: .5s;
+}
+
+.script.active {
+  color: #FF504C;
+  transition: .5s;
+}
+
+/* =============================================================
+* CUSTOM DESIGN FOR MEDIAELEMENT.JS
+============================================================= */
+
+.mejs__container .mejs__inner .mejs__controls {
+  background-color: #FF504C;
+}
+
+/* =============================================================
+* MEDIA QUERIES
+============================================================= */
+
+@media (min-width: 768px) {
+  main {
+    width: 80%;
+  }
+
+  .transcript {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    width: 70%;
+  }
+}
