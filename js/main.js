@@ -32,8 +32,7 @@ video.addEventListener('timeupdate', function() {
     scripts[i].classList.remove('active');
 
     // get the script's starting time
-    // ** each script's starting time is saved
-    // ** in 'title' attribute of each script span
+    // ** each script's starting time is saved in 'title' attribute
     scriptStart = scripts[i].getAttribute('title');
 
     // get the script's ending time
@@ -41,7 +40,8 @@ video.addEventListener('timeupdate', function() {
       scriptEnd = this.duration;       // then the ending time will be
                                        // the total duration of the video
     } else {
-      // the next script's starting time will be the ending time
+      // the next script's starting time will be
+      // the ending time of the current script
       scriptEnd = scripts[i+1].getAttribute('title');
     }
 
