@@ -36,9 +36,9 @@ video.addEventListener('timeupdate', function() {
     scriptStart = scripts[i].getAttribute('title');
 
     // get the script's ending time
-    if (scripts[i+1] === undefined) {  // if the script is last one,
-      scriptEnd = this.duration;       // then the ending time will be
-                                       // the total duration of the video
+    if (scripts[i+1] === undefined) { // if the script is last one,
+      scriptEnd = this.duration;      // then the ending time will be
+                                      // the total duration of the video
     } else {
       // the next script's starting time will be
       // the ending time of the current script
